@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main(void)
+{
+	int key, i;
+	int list[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+
+	printf("탐색할 값을 입력하시오:");
+	scanf("%d", &key);
+
+	for (i = 0; i < 10; i++)
+		if (list[i] == key)
+			printf("탐색 성공 인덱스= %d\n", i);
+
+	printf("탐색 종료\n");
+
+	return 0;
+}
